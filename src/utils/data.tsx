@@ -7,6 +7,7 @@ import Places from "../../public/places.png";
 import MyStore from "../../public/mystore.png";
 import Sudoku from "../../public/sudoku.png";
 import Christmas from "../../public/christmas.png";
+import Shopdesk from "../../public/shopdesk.png";
 
 import ReactCert from "../../public/reactCert.jpg";
 import NextJSCert from "../../public/nextCert.jpg";
@@ -119,46 +120,53 @@ export const worksData = [
     id: 1,
   },
   {
+    name: "Shopdesk",
+    tools: "React, NextJS, Redux, TypeScript, TailwindCSS",
+    link: "https://shopdesk.im/",
+    imageSrc: Shopdesk,
+    id: 2,
+  },
+  {
     name: "Places",
     tools: "Vite, Typescript, JWT, MongoDb, Cloudfare R2",
     link: "https://places-spa-frontend.vercel.app/",
     imageSrc: Places,
-    id: 2,
+    id: 3,
   },
   {
     name: "Christmas",
     tools: "Reactjs, Nextjs, Tailwind, Framer Motion",
     link: "https://engrgolden-christmas.herokuapp.com/",
     imageSrc: Christmas,
-    id: 3,
+    id: 4,
   },
   {
     name: "Payapi",
     tools: "Eleventy ",
     link: "https://payapi-zeta-inky.vercel.app/",
     imageSrc: PayApi,
-    id: 4,
+    id: 5,
   },
   {
     name: "Online Store",
     tools: "Reactjs, React Router, Redux, SCSS",
     link: "https://food-one-two.vercel.app/",
     imageSrc: MyStore,
-    id: 5,
+    id: 6,
   },
   {
     name: "Sudoku Solver",
     tools: "HTML, CSS, Javascript",
     link: "https://sudoku-solver-ecru.vercel.app/",
     imageSrc: Sudoku,
-    id: 6,
+    id: 7,
   },
   {
     name: "Hangman Game",
     tools: "ReactJs, Typescript, CSS, Vite",
     link: "https://hangman-silk-seven.vercel.app/",
     imageSrc: Hangman,
-    id: 7,
+    id: 8,
   },
 ];
 
