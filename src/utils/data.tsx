@@ -121,7 +121,7 @@ export const worksData = [
   {
     name: "Places",
     tools: "Vite, Typescript, JWT, MongoDb, Cloudfare R2",
-    link: "https://engrgolden-places.netlify.app/",
+    link: "https://places-spa-frontend.vercel.app/",
     imageSrc: Places,
     id: 2,
   },

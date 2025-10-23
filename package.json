@@ -29,6 +29,7 @@
     "picomatch": "^4.0.3",
     "postcss": "^8.5.5",
     "tailwindcss": "^4.1.10",
-    "typescript": "^5"
+    "typescript": "^5",
+    "wrangler": "^4.45.0"
   }
 }
