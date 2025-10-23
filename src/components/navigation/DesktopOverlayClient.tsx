@@ -1,5 +1,5 @@
 "use client";
-import Navigation from "./Navigation";
+import Navigation from "./Jaes";
 import { FaBars, FaXmark } from "react-icons/fa6";
 import { useState, useRef } from "react";
 

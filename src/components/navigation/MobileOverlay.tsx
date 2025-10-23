@@ -1,7 +1,7 @@
 "use client";
 import { useState, useRef } from "react";
 import DetailsAside from "../detailsAside/DetailsAside";
-import Navigation from "./Navigation";
+import Navigation from "./Jaes";
 import { FaEllipsisVertical, FaBars, FaXmark } from "react-icons/fa6";
 
 export default function MobileOverlay() {
