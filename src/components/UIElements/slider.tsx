@@ -7,18 +7,20 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { ReactNode } from "react";
+import type { Swiper as SwiperCore } from "swiper";
 
 export default function Slider({ slides }: { slides: ReactNode[] }) {
   const prevRef = useRef<HTMLButtonElement>(null);
   const nextRef = useRef<HTMLButtonElement>(null);
-  const [swiperInstance, setSwiperInstance] = useState<any>(null);
+  const [swiperInstance, setSwiperInstance] = useState<SwiperCore | null>(null);
   const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
     if (
       swiperInstance &&
-      swiperInstance.params &&
+      swiperInstance.params.navigation &&
       prevRef.current &&
+      typeof swiperInstance.params.navigation !== "boolean" &&
       nextRef.current
     ) {
       swiperInstance.params.navigation.prevEl = prevRef.current;
