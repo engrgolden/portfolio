@@ -1,10 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-const texts = [
-  "beautiful user interfaces",
-  "scaleable web apps",
-  "cutting edge solutions",
-];
+import { texts } from "../../utils/data";
 
 export default function DynamicCode() {
   const [output, setOutput] = useState("");
@@ -39,7 +35,7 @@ export default function DynamicCode() {
   }, [charIndex, isDeleting, textIndex]);
 
   return (
-    <p className="text-white text-center font-mono">
+    <p className="text-white text-center font-mono w-fit">
       {"<"}
       <span className="text-amber-400">code</span>
       {">"} I build {output}|{"<"}

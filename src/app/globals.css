@@ -1,11 +1,131 @@
 @import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap");
+
+@theme {
+  --color-gold: #ffc107;
+  --color-theme-50: #2c2c38;
+  --color-theme-100: #2c2c36;
+  --color-theme-150: #282832;
+  --color-theme-200: #24242e;
+  --color-theme-300: #23232c;
+  --color-theme-400: #22222b;
+  --color-theme-500: #20202a;
+  --color-theme-550: #1e1e28;
+  --color-theme-600: #1c1c26;
+  --color-theme-700: #181821;
+  --color-theme-800: #14141d;
+  --color-theme-900: #191923;
+
+  --breakpoint-xxs: 320px;
+  --breakpoint-xs: 480px;
+  --breakpoint-mdlg: 896px;
+  --font-poppins: "poppins", sans-serif;
+  --font-courier: "Courier Prime", monospace;
+}
+
+.animate-config {
+  @apply transition-all duration-800 ease-in-out;
+}
+
+.flex-center {
+  @apply flex justify-center items-center;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .desktop-work-detail {
+    @apply group-hover/name1:translate-y-0 w-full absolute bottom-0 bg-theme-100 opacity-95 translate-y-full;
+  }
+  .desktop-work-expand-icon {
+    @apply group-hover/name1:opacity-80 hover:opacity-100 hover:scale-125 hover:text-white opacity-0;
+  }
+}
+
+.header0 {
+  @apply text-white xl:text-[42px] text-[36px] font-extrabold;
+}
+
+.header1 {
+  @apply text-white text-[18px] font-bold;
+}
+
+.header2 {
+  @apply text-white text-[14px] font-semibold;
+}
+
+.header3 {
+  @apply text-white text-[16px] font-semibold;
+}
+
+.medium {
+  @apply text-[12px];
+}
+
+.small {
+  @apply text-[10px];
+}
+
+/* 
+mobile-only
+@media (hover: none) and (pointer: coarse) {
+  .device-aware-work-detail {
+     @apply bg-green-400; 
+  }
+} 
+*/
+
+* {
+  box-sizing: border-box;
+}
 
 html {
   background-color: #262626;
-  color: white;
+  color: #8c8c8e;
   scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 12px;
 }
 
 html::-webkit-scrollbar {
   display: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.writing-vertical-rl {
+  writing-mode: vertical-rl;
+}
+
+.tracking-most-wide {
+  letter-spacing: 0.25rem;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  transform: translateX(-80%);
+  width: 2rem !important;
+  height: 2rem !important;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  color: #facc15 !important;
+  font-size: 1.25rem !important;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill {
+  transition: background-color 9999s ease-in-out 0s;
+  -webkit-text-fill-color: white !important; /* ✅ White autofill text */
+  box-shadow: 0 0 0 1000px #24242e inset !important; /* ✅ Fake the background */
 }

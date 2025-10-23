@@ -1,52 +1,21 @@
-const servicesData = [
-  {
-    header: "Lorem Lorem Lorem",
-    text: "Aliquam erat volutpat. Fusce sed auctor sapien. Duis id feugiat sem. Maecenas dapibus id purus a laoreet. Maecenas fringilla lacinia aliquet. Mauris viverra rhoncus sem. Mauris a augue nec magna dapibus aliquam. Duis tristique in tortor vel finibus. In hac habitasse platea dictumst. Aliquam hendrerit ante libero, in finibus erat elementum sed. Nulla facilisi.",
-  },
-  {
-    header: "Lorem Lorem Lorem",
-    text: "Aliquam erat volutpat. Fusce sed auctor sapien. Duis id feugiat sem. Maecenas dapibus id purus a laoreet. Maecenas fringilla lacinia aliquet. Mauris viverra rhoncus sem. Mauris a augue nec magna dapibus aliquam. Duis tristique in tortor vel finibus. In hac habitasse platea dictumst. Aliquam hendrerit ante libero, in finibus erat elementum sed. Nulla facilisi.",
-  },
-  {
-    header: "Lorem Lorem Lorem",
-    text: "Aliquam erat volutpat. Fusce sed auctor sapien. Duis id feugiat sem. Maecenas dapibus id purus a laoreet. Maecenas fringilla lacinia aliquet. Mauris viverra rhoncus sem. Mauris a augue nec magna dapibus aliquam. Duis tristique in tortor vel finibus. In hac habitasse platea dictumst. Aliquam hendrerit ante libero, in finibus erat elementum sed. Nulla facilisi.",
-  },
-  {
-    header: "Lorem Lorem Lorem",
-    text: "Aliquam erat volutpat. Fusce sed auctor sapien. Duis id feugiat sem. Maecenas dapibus id purus a laoreet. Maecenas fringilla lacinia aliquet. Mauris viverra rhoncus sem. Mauris a augue nec magna dapibus aliquam. Duis tristique in tortor vel finibus. In hac habitasse platea dictumst. Aliquam hendrerit ante libero, in finibus erat elementum sed. Nulla facilisi.",
-  },
-  {
-    header: "Lorem Lorem Lorem",
-    text: "Aliquam erat volutpat. Fusce sed auctor sapien. Duis id feugiat sem. Maecenas dapibus id purus a laoreet. Maecenas fringilla lacinia aliquet. Mauris viverra rhoncus sem. Mauris a augue nec magna dapibus aliquam. Duis tristique in tortor vel finibus. In hac habitasse platea dictumst. Aliquam hendrerit ante libero, in finibus erat elementum sed. Nulla facilisi.",
-  },
-  {
-    header: "Lorem Lorem Lorem",
-    text: "Aliquam erat volutpat. Fusce sed auctor sapien. Duis id feugiat sem. Maecenas dapibus id purus a laoreet. Maecenas fringilla lacinia aliquet. Mauris viverra rhoncus sem. Mauris a augue nec magna dapibus aliquam. Duis tristique in tortor vel finibus. In hac habitasse platea dictumst. Aliquam hendrerit ante libero, in finibus erat elementum sed. Nulla facilisi.",
-  },
-  {
-    header: "Lorem Lorem Lorem",
-    text: "Aliquam erat volutpat. Fusce sed auctor sapien. Duis id feugiat sem. Maecenas dapibus id purus a laoreet. Maecenas fringilla lacinia aliquet. Mauris viverra rhoncus sem. Mauris a augue nec magna dapibus aliquam. Duis tristique in tortor vel finibus. In hac habitasse platea dictumst. Aliquam hendrerit ante libero, in finibus erat elementum sed. Nulla facilisi.",
-  },
-  {
-    header: "Lorem Lorem Lorem",
-    text: "Aliquam erat volutpat. Fusce sed auctor sapien. Duis id feugiat sem. Maecenas dapibus id purus a laoreet. Maecenas fringilla lacinia aliquet. Mauris viverra rhoncus sem. Mauris a augue nec magna dapibus aliquam. Duis tristique in tortor vel finibus. In hac habitasse platea dictumst. Aliquam hendrerit ante libero, in finibus erat elementum sed. Nulla facilisi.",
-  },
-];
+import { servicesData } from "../../utils/data";
 
 function HomeServices() {
   return (
     <section className="flex flex-col gap-8">
       <header>
-        <h2 className="font-medium text-xl text-center ">My Services</h2>
+        <h2 className="header1 ">My Services</h2>
       </header>
-      {servicesData.map((servicesData, index) => {
-        return (
-          <div key={index} className="bg-neutral-600 w-11/12 p-8">
-            <h3 className="text-sm font-medium my-2">{servicesData.header}</h3>
-            <p className="text-xs text-gray-400">{servicesData.text}</p>
-          </div>
-        );
-      })}
+      <div className="flex flex-col w-full xxs:grid xxs:grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-8 justify-self-center">
+        {servicesData.map((servicesData, index) => {
+          return (
+            <div key={index} className="bg-theme-100 p-8 shadow-2xl h-fit">
+              <h3 className="header2 my-2">{servicesData.header}</h3>
+              <p className="text-xs">{servicesData.text}</p>
+            </div>
+          );
+        })}
+      </div>
     </section>
   );
 }
