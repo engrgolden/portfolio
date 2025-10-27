@@ -22,7 +22,7 @@ export default function DetailsAsideContent() {
         </ul>
         <hr className="my-4 bg-[#393b3a]" />
         <div className=" font-bold flex gap-2 items-center hover:text-white">
-          <Link target="_blank" href="https://bit.ly/engrgolden-resume">
+          <Link target="_blank" href="https://bit.ly/engrgolden-cv">
             <p>VIEW RESUME</p>
           </Link>
 

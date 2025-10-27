@@ -37,7 +37,7 @@ function HomeContact() {
           <div className="flex justify-between items-center w-full">
             <span>Resume:</span>
             <span className="medium font-bold flex gap-2 items-center hover:text-white">
-              <Link target="_blank" href="https://bit.ly/engrgolden-resume">
+              <Link target="_blank" href="https://bit.ly/engrgolden-cv">
                 <p>VIEW RESUME</p>
               </Link>
               <FaDownload />
